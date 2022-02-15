@@ -1,0 +1,19 @@
+package br.com.fiap.revisao.model;
+
+public class Carro {
+
+	private int capacidade;
+	private String cor;
+	private String modelo;
+	private int ano;
+	private boolean automatico;
+	private double velocidade;
+	
+	public void acelerar() {
+		velocidade += velocidade * 0.1;
+	}
+	
+	public boolean validaAno() {
+		return (ano >= 1990 && ano<= 2023)? true:false;
+	}
+}
