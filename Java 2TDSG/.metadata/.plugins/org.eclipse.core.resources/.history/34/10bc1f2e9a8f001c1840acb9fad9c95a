@@ -1,0 +1,8 @@
+package br.com.fiap.bean;
+
+public class ContaPoupanca extends Conta implements IContaInvestimento {
+
+	public double calculaRetornoInvestimento() {
+		return 0;
+	}
+}

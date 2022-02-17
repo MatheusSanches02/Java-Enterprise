@@ -1,0 +1,15 @@
+package br.com.fiap.bean;
+
+import java.util.Calendar;
+
+public abstract class Conta {
+
+	private int agencia;
+	private int numero;
+	private Calendar dataAbertura;
+	private double saldo;
+	
+	public void Depositar(double valor) {
+		saldo -= valor;
+	}
+}

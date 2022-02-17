@@ -1,0 +1,10 @@
+package br.com.fiap.bean;
+
+public class ContaPoupanca extends Conta implements IContaInvestimento {
+	
+	private float taxa;
+
+	public float calculaRetornoInvestimento() {
+		return 0;
+	}
+}

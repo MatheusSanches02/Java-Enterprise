@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="br.com.fiap.bean.ContaCorrente"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="br.com.fiap.bean.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="br.com.fiap.bean.TipoConta"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

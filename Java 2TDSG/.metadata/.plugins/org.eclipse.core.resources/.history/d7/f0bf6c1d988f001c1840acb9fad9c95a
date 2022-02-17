@@ -1,0 +1,10 @@
+package br.com.fiap.bean;
+
+public class ContaCorrente extends Conta {
+
+	private TipoConta tipo;
+	
+	public double Depositar(double valor) {
+		return saldo += valor;
+	}
+}
