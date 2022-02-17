@@ -7,7 +7,7 @@ public class Carro {
 	private String modelo;
 	private int ano;
 	private boolean automatico;
-	protected double velocidade;
+	private double velocidade;
 	
 	// Construtores -> métodos especial utilizado na instanciação da Classe
 	// 1- Tem o mesmo nome da classe

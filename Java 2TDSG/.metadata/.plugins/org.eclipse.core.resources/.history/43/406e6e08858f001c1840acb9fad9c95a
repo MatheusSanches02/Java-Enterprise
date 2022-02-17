@@ -1,7 +1,6 @@
 package br.com.fiap.revisao.main;
 
 import br.com.fiap.revisao.model.Carro;
-import br.com.fiap.revisao.model.CarroEsportivo;
 
 public class Teste {
 
@@ -21,7 +20,7 @@ public class Teste {
 				uno.acelerar(3); //marcha
 				System.out.println("Velocidade atual: " + uno.getVelocidade());
 				
-				System.out.println(uno.validaAno()?"Ano correto":"Ano inválido");
+				System.out.println(uno.validarAno()?"Ano correto":"Ano inválido");
 				
 				//Instanciar a classe CarroEsportivo com todos os valores (Menos a equipe)
 				CarroEsportivo ferrari = 
@@ -31,7 +30,7 @@ public class Teste {
 				ferrari.acelerar(); 
 				System.out.println("Velocidade atual: " + ferrari.getVelocidade());
 				
-				System.out.println(ferrari.validaAno()?"Ano correto":"Ano inválido");
+				System.out.println(ferrari.validarAno()?"Ano correto":"Ano inválido");
 				
 				//CarroEsportivo esporte = new Carro("Gol", 2010, 100); Não compila!
 				Carro carro = new CarroEsportivo("Gol", 2010, 100);
