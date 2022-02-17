@@ -7,7 +7,7 @@ public class Carro {
 	private String modelo;
 	private int ano;
 	private boolean automatico;
-	protected double velocidade;
+	private double velocidade;
 	
 	// Construtores -> métodos especial utilizado na instanciação da Classe
 	// 1- Tem o mesmo nome da classe
@@ -33,7 +33,7 @@ public class Carro {
 	// Parâmetros diferentes -> diferentes no tipo ou na quantidade
 
 	public void acelerar(double velocidade) {
-		this.velocidade += velocidade;
+		velocidade += velocidade * 0.1;
 	}
 	
 	public void acelerar(int marcha) {
