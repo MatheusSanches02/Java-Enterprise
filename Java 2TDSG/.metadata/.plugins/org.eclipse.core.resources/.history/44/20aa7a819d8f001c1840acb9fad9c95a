@@ -1,0 +1,14 @@
+package br.com.fiap.bean.main;
+
+import java.util.Calendar;
+
+import br.com.fiap.bean.ContaCorrente;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		ContaCorrente cc1 = new ContaCorrente(001, 1, Calendar.getInstance(), 5000.0, tipo);
+
+	}
+
+}

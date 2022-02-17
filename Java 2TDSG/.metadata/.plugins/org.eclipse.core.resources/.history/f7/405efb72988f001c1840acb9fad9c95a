@@ -1,0 +1,26 @@
+package br.com.fiap.bean;
+
+public class ContaCorrente extends Conta {
+
+	private TipoConta tipo;
+	
+	public double Depositar(double valor) {
+		return saldo += valor;
+	}
+	
+	public double Retirar(double valor) throws Exception {
+		try {
+			saldo -= valor;
+			if(tipo == tipo.COMUM && saldo < 0) {
+				System.out.println("Operação nao concluida!");
+				return saldo;
+			}
+			else {
+				return saldo -=valor;
+			}
+		}catch(Exception e) {
+			throw new Exception(e.getMessage());
+		}
+		
+	}
+}
