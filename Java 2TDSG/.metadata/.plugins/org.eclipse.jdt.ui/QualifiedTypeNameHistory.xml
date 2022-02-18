@@ -5,5 +5,14 @@
     <fullyQualifiedTypeName name="br.com.fiap.bean.ContaPoupanca"/>
     <fullyQualifiedTypeName name="br.com.fiap.bean.TipoConta"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.com.fiap.revisao.model.CarroEsportivo"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="br.com.fiap.revisao.dao.CarroDao"/>
+    <fullyQualifiedTypeName name="br.com.fiap.revisao.model.Carro"/>
+    <fullyQualifiedTypeName name="br.com.fiap.revisao.dao.CarroOracleDao"/>
 </qualifiedTypeNameHistroy>

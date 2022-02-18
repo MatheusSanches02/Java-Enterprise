@@ -1,5 +1,6 @@
 package br.com.fiap.bean;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -7,10 +8,10 @@ public class Teste {
 
 	public static void main(String[] args) {
 		
-		ContaCorrente cc1 = new ContaCorrente(001, 1, Calendar.getInstance(), 5000.0, TipoConta.COMUM);
-		ContaPoupanca cp1 = new ContaPoupanca(002, 2, Calendar.getInstance(), 5000.0, TipoConta.ESPECIAL);
+		ContaCorrente cc1 = new ContaCorrente();
+		ContaPoupanca cp1 = new ContaPoupanca();
 		
-		List<ContaCorrente> contas;
+		List<ContaCorrente> contas = new ArrayList<ContaCorrente>();
 		contas.add(cc1);
 		System.out.println(cc1.saldo);
 	}
