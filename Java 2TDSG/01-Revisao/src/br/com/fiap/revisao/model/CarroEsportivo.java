@@ -21,6 +21,11 @@ public class CarroEsportivo extends Carro{
 		}
 		
 		//Métodos
+		
+		@Override
+		public String toString() {
+			return super.toString() + (turbo? " Turbo" : " Normal");
+		}
 		//Sobrescrita (Override) -> mesmo método do pai implementado na classe filha
 		public void acelerar() {
 			//Se for turbo aumenta em 40%, se não aumenta em 20% a velocidade

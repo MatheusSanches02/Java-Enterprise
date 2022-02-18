@@ -1,0 +1,47 @@
+package br.com.fiap.revisao.main;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import br.com.fiap.revisao.model.Carro;
+import br.com.fiap.revisao.model.CarroEsportivo;
+
+public class TesteColecoes {
+
+	public static void main(String[] args) {
+		List<Carro> carros = new ArrayList<Carro>();
+		
+		Carro ferrari = new Carro("Fearrari", 2021, 300.0);
+		Carro masseratti = new Carro("Masseratti", 2022, 400.0);
+		
+		//carros.add(new Carro("Celta", 2010,80));
+		
+		carros.add(ferrari);
+		carros.add(masseratti);
+		
+		for(int i = 0; i<carros.size(); i++) {
+			System.out.println(carros.get(i));
+		}
+		
+		for (Carro car : carros) {
+			System.out.println(car);
+		}
+		
+		Set<Carro> conjunto = new HashSet<Carro>();
+		
+		conjunto.add(masseratti);
+		conjunto.add(masseratti);
+		conjunto.add(ferrari);
+		
+		for(int i = 0; i<conjunto.size(); i++) {
+			System.out.println(carros.get(i));
+		}
+		
+		for (Carro car : conjunto) {
+			System.out.println(car);
+		}
+		
+	}
+}

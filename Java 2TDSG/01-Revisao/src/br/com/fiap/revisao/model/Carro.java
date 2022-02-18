@@ -29,6 +29,14 @@ public class Carro {
 	// public Carro() {}
 
 	// Métodos
+	
+	//Sobrescrever o método toString para exibir os valores dos atributos
+		@Override
+		public String toString() {
+			return "Modelo: " + modelo + " Ano: " + ano + " Velocidade: " + velocidade + 
+					" Cor: " + cor + (automatico?" Automático":" Mecânico") + 
+					" Capacidade: " + capacidade;
+		}
 	// Sobrecarga (Overload) - método com o mesmo nome mas com parâmetros diferentes
 	// Parâmetros diferentes -> diferentes no tipo ou na quantidade
 
