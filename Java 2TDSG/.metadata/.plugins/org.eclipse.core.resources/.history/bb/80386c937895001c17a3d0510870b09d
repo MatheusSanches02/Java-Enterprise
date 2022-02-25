@@ -1,0 +1,27 @@
+package br.com.fiap.bean;
+
+import java.util.Calendar;
+
+public abstract class Conta {
+
+	private int agencia;
+	private int numero;
+	private Calendar dataAbertura;
+	protected double saldo;
+	
+	public abstract double Depositar(double valor) ;
+	
+	public abstract double Retirar(double valor) ;
+	
+	public Conta() {
+		
+	}
+	
+	public Conta(int agencia, int numero, Calendar dataAbertura, double saldo) {
+		this.agencia = agencia;
+		this.numero = numero;
+		this.dataAbertura = dataAbertura;
+		this.saldo = saldo;
+	}
+	
+}

@@ -1,7 +1,14 @@
 package br.com.fiap.revisao.main;
 
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.ArrayList;
+import java.util.List;
+
 import br.com.fiap.revisao.model.Carro;
 import br.com.fiap.revisao.model.CarroEsportivo;
+import br.com.fiap.revisao.model.Combustivel;
+import br.com.fiap.revisao.model.Revisao;
 
 public class Teste {
 
@@ -39,6 +46,19 @@ public class Teste {
 				//Sobrescrita executa o método do Objeto
 				carro.acelerar(); //Executou o método do CarroEsportivo
 				System.out.println("Velocidade atual: " + carro.getVelocidade());
+				
+				List<Revisao> revisoes = new ArrayList<Revisao>();
+				
+				revisoes.add(new Revisao(1000, 20000, LocalDate.of(2022,  Month.JANUARY, 20)));
+				revisoes.add(new Revisao(499, 30000, LocalDate.now()));
+				
+				Carro polo = new Carro(5, "Cinza", "Polo", 2020, true, 100, revisoes, Combustivel.FLEX);
+				
+				System.out.println(polo);
+				
+				for (Revisao item : polo.getRevisoes()) {
+					System.out.println(item);
+				}
 	}
 
 }
