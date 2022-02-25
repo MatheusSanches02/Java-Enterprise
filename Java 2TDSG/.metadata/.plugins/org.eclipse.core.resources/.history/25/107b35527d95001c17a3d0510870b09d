@@ -1,0 +1,17 @@
+package br.com.fiap.bean;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		ContaCorrente cc1 = new ContaCorrente(1, 102, Calendar.getInstance(), 1000.0, TipoConta.COMUM);
+		ContaPoupanca cp1 = new ContaPoupanca();
+		
+		cc1.Depositar();
+	}
+
+}

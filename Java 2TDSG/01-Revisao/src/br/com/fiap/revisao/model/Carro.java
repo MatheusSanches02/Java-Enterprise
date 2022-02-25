@@ -1,5 +1,7 @@
 package br.com.fiap.revisao.model;
 
+import java.util.List;
+
 public class Carro {
 
 	private int capacidade;
@@ -8,6 +10,10 @@ public class Carro {
 	private int ano;
 	private boolean automatico;
 	protected double velocidade;
+	
+	List<Revisao> revisoes;
+	
+	private Combustivel combustivel;
 	
 	// Construtores -> métodos especial utilizado na instanciação da Classe
 	// 1- Tem o mesmo nome da classe
@@ -26,17 +32,43 @@ public class Carro {
 		this.automatico = automatico;
 	}
 	
+	//construtor com todos parametros
+	public Carro(int capacidade, String cor, String modelo, int ano, boolean automatico, double velocidade,
+			List<Revisao> revisao, Combustivel combustivel) {
+		this(modelo, ano, velocidade, cor, capacidade, automatico);
+		this.revisoes = revisao;
+		this.combustivel = combustivel;
+	}
+
+	
 	// public Carro() {}
 
 	// Métodos
 	
-	//Sobrescrever o método toString para exibir os valores dos atributos
+	public List<Revisao> getRevisoes() {
+		return revisoes;
+	}
+
+	public void setRevisoes(List<Revisao> revisao) {
+		this.revisoes = revisao;
+	}
+
+	public Combustivel getCombustivel() {
+		return combustivel;
+	}
+
+	public void setCombustivel(Combustivel combustivel) {
+		this.combustivel = combustivel;
+	}
+
+		//Sobrescrever o método toString para exibir os valores dos atributos
 		@Override
 		public String toString() {
 			return "Modelo: " + modelo + " Ano: " + ano + " Velocidade: " + velocidade + 
 					" Cor: " + cor + (automatico?" Automático":" Mecânico") + 
 					" Capacidade: " + capacidade;
 		}
+	
 	// Sobrecarga (Overload) - método com o mesmo nome mas com parâmetros diferentes
 	// Parâmetros diferentes -> diferentes no tipo ou na quantidade
 

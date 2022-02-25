@@ -1,0 +1,24 @@
+package br.com.fiap.bean;
+
+public class ContaPoupanca extends Conta implements IContaInvestimento {
+	
+	private double taxa;
+	public final double rendimento = 10;
+
+	public double Depositar(double valor) {
+		return saldo += valor;
+	}
+	
+	public double Retirar(double valor) {
+		if (saldo > valor) {
+			return saldo -= valor * taxa;
+		}
+		else {
+			return saldo;
+		}
+	}
+	
+	public double calculaRetornoInvestimento() {
+		return saldo * rendimento;
+	}
+}

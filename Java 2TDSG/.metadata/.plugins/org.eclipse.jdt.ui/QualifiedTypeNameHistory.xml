@@ -15,4 +15,6 @@
     <fullyQualifiedTypeName name="br.com.fiap.revisao.dao.CarroDao"/>
     <fullyQualifiedTypeName name="br.com.fiap.revisao.model.Carro"/>
     <fullyQualifiedTypeName name="br.com.fiap.revisao.dao.CarroOracleDao"/>
+    <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+    <fullyQualifiedTypeName name="br.com.fiap.exception.SaldoInsuficienteException"/>
 </qualifiedTypeNameHistroy>
