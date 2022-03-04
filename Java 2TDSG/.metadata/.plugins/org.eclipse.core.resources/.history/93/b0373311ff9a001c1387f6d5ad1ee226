@@ -1,0 +1,16 @@
+package br.com.fiap.jpa.entity;
+
+import java.util.Calendar;
+
+public class Produto {
+
+	private Integer codigo;
+	
+	private String nome;
+	
+	private String descricao;
+	
+	private Calendar dataFabricacao;
+	
+	private Double valor;
+}

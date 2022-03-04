@@ -1,0 +1,12 @@
+package br.com.fiap.main;
+
+import br.com.fiap.model.Carro;
+
+public class Exemplo {
+
+	public static void main(String[] args) {
+		Carro carro = new Carro();
+		
+		System.out.println(carro.getClass().getName());
+	}
+}
