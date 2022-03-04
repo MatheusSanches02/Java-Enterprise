@@ -1,0 +1,10 @@
+package br.com.fiap.orm;
+
+public class Orm {
+
+	/**
+	 * Metodo que recebe o objeto anotado com o @Tabela e retorna uma query de pesquisa
+	 * @param obj
+	 * @return SQL de pesquisa de acordo com a configuração de anotação
+	 */
+}

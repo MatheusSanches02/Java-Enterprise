@@ -1,0 +1,14 @@
+package br.com.fiap.annotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
+
+//Define onde pode ser utilizada a anotação
+@Target(ElementType.FIELD)
+public @interface Coluna {
+
+	String nome();
+	boolean chave() default false;
+	int tamanho() default 0;
+	boolean obrigatorio() default false;
+}
