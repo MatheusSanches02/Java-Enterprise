@@ -54,6 +54,97 @@ public class Aluno {
 	@Transient
 	private Integer idade;
 	
+	public Aluno() {}
+	
+	public Aluno(String name, Calendar dataNascimento, Genero genero, byte[] foto, String email,
+			LocalDate dataMatricula, Boolean isActive) {
+		super();
+		this.name = name;
+		this.dataNascimento = dataNascimento;
+		this.genero = genero;
+		this.foto = foto;
+		this.email = email;
+		this.dataMatricula = dataMatricula;
+		this.isActive = isActive;
+	}
+	
+	@Override
+	public String toString() {
+		return "Rm: " + rm + " Nome: " + name;
+	}
+
+	public Integer getRm() {
+		return rm;
+	}
+
+	public void setRm(Integer rm) {
+		this.rm = rm;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Calendar getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(Calendar dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public Genero getGenero() {
+		return genero;
+	}
+
+	public void setGenero(Genero genero) {
+		this.genero = genero;
+	}
+
+	public byte[] getFoto() {
+		return foto;
+	}
+
+	public void setFoto(byte[] foto) {
+		this.foto = foto;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public LocalDate getDataMatricula() {
+		return dataMatricula;
+	}
+
+	public void setDataMatricula(LocalDate dataMatricula) {
+		this.dataMatricula = dataMatricula;
+	}
+
+	public Boolean getIsActive() {
+		return isActive;
+	}
+
+	public void setIsActive(Boolean isActive) {
+		this.isActive = isActive;
+	}
+
+	public Integer getIdade() {
+		return idade;
+	}
+
+	public void setIdade(Integer idade) {
+		this.idade = idade;
+	}
+	
 	
 	
 }

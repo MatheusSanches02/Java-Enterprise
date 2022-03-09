@@ -24,7 +24,7 @@ import javax.persistence.Transient;
 public class Produto {
 
 	@Id //PK
-	@Column(name="cd_produto")
+	@Column(name="cd_produto")//nao precisa do nullable pq o Id ja define isso
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "produto") //gera valor automatico - generator = name
 	private Integer codigo;
 	
