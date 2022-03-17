@@ -1,6 +1,8 @@
 package br.com.fiap.exercicio1;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 
 import javax.persistence.Column;
@@ -11,6 +13,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.PostLoad;
+import javax.persistence.PostPersist;
+import javax.persistence.PrePersist;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -58,7 +63,18 @@ public class Aluno {
 	
 	public Aluno(String name, Calendar dataNascimento, Genero genero, byte[] foto, String email,
 			LocalDate dataMatricula, Boolean isActive) {
-		super();
+		this.name = name;
+		this.dataNascimento = dataNascimento;
+		this.genero = genero;
+		this.foto = foto;
+		this.email = email;
+		this.dataMatricula = dataMatricula;
+		this.isActive = isActive;
+	}
+
+	public Aluno(Integer rm,String name, Calendar dataNascimento, Genero genero, byte[] foto, String email,
+			LocalDate dataMatricula, Boolean isActive) {
+		this.rm = rm;
 		this.name = name;
 		this.dataNascimento = dataNascimento;
 		this.genero = genero;
@@ -68,9 +84,26 @@ public class Aluno {
 		this.isActive = isActive;
 	}
 	
+	//Criar um metodo que é executado automaticamente antes ou apos algum evento
+	@PrePersist //Antes de cadastrar
+	@PostPersist //Depois de cadastrar
+	private void executar() {
+		System.out.println("Ação sendo executada...");
+	}
+	
+	@PostLoad //Depois de carregar o objeto
+	private void carregar() {
+		System.out.println("Carregando a idade");
+		idade = 10;
+	}
+	
 	@Override
 	public String toString() {
-		return "Rm: " + rm + " Nome: " + name;
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		DateTimeFormatter formataData = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		return "Rm: " + rm + " Nome: " + name + " Data nascimento: " + sdf.format(dataNascimento.getTime()) +
+				" Genero: " + genero + " E-mail: " + email + "Data Matricula: "
+				+ dataMatricula.format(formataData) + " Ativo: " +  isActive;
 	}
 
 	public Integer getRm() {

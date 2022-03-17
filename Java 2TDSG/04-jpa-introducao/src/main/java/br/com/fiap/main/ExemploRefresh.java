@@ -6,29 +6,26 @@ import javax.persistence.Persistence;
 
 import br.com.fiap.exercicio1.Aluno;
 
-public class ExemploPesquisa {
+public class ExemploRefresh {
 
-	//Pesquisar um aluno pela PK
 	public static void main(String[] args) {
-		
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("CLIENTE_ORACLE");
-		
 		EntityManager em = factory.createEntityManager();
 		
-		Aluno aluno = em.find(Aluno.class, 1); //(Entidde, PK)
+		Aluno aluno = em.find(Aluno.class, 1);
 		
-		System.out.println(aluno);
+		System.out.println(aluno.getName());
 		
-		//aluno.setName("Carlos");
+		aluno.setName("Arthur");
 		
-		//em.getTransaction().begin();
-		//em.getTransaction().commit();
+		System.out.println(aluno.getName());
 		
-		//System.out.println(em.find(Aluno.class, 1));
+		em.refresh(aluno);
 		
-		em.close();
+		System.out.println(aluno.getName());
+		
 		factory.close();
-		
+		em.close();
 	}
 
 }

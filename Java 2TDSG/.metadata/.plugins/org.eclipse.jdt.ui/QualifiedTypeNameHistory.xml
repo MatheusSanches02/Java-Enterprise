@@ -29,6 +29,6 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="br.com.fiap.exercicio1.Genero"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="br.com.fiap.exercicio1.Aluno"/>
+    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
 </qualifiedTypeNameHistroy>
