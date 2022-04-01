@@ -18,17 +18,20 @@
     <fullyQualifiedTypeName name="br.com.fiap.exception.SaldoInsuficienteException"/>
     <fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
-    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="java.beans.Transient"/>
     <fullyQualifiedTypeName name="javax.persistence.Transient"/>
-    <fullyQualifiedTypeName name="javax.persistence.Table"/>
     <fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
     <fullyQualifiedTypeName name="javax.persistence.Enumerated"/>
     <fullyQualifiedTypeName name="javax.persistence.EnumType"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="br.com.fiap.exercicio1.Genero"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="br.com.fiap.exercicio1.Aluno"/>
     <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="br.com.fiap.jpa.singleton.EntityManagerFactorySingleton"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="br.com.fiap.jpa.exception.CommitException"/>
+    <fullyQualifiedTypeName name="br.com.fiap.jpa.entity.Churros"/>
 </qualifiedTypeNameHistroy>

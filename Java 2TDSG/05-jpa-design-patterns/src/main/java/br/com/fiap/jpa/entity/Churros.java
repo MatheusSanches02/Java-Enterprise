@@ -24,28 +24,42 @@ public class Churros {
 	@Id
 	@Column(name="cd_churros")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="churros")
-	public Integer codigo;
+	private Integer codigo;
 	
 	@Column(name="nm_churros", length=20, nullable=false)
-	public String nome;
+	private String nome;
 	
 	@Column(name="vl_churros", precision=10,scale=2)
-	public BigDecimal valor;
+	private BigDecimal valor;
 	
 	@Column(name="ds_sabor", length=60, nullable=false)
-	public String sabor;
+	private String sabor;
 	
 	@Column(name="dt_validade")
 	@Temporal(TemporalType.DATE)
-	public Calendar validade;
+	private Calendar validade;
 	
 	@Lob
 	@Column(name="fl_foto")
-	public byte[] foto;
+	private byte[] foto;
 	
 	@Enumerated(EnumType.STRING)
 	@Column(name="ds_cobertura", length = 20, nullable = false)
-	public Cobertura cobertura;
+	private Cobertura cobertura;
+	
+	
+
+	public Churros() {} //usar no find
+
+	public Churros(String nome, BigDecimal valor, String sabor, Calendar validade, byte[] foto,
+			Cobertura cobertura) {
+		this.nome = nome;
+		this.valor = valor;
+		this.sabor = sabor;
+		this.validade = validade;
+		this.foto = foto;
+		this.cobertura = cobertura;
+	}
 
 	public Integer getCodigo() {
 		return codigo;
