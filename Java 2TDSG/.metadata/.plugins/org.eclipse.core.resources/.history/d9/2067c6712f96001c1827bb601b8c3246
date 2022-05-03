@@ -1,9 +1,0 @@
-package br.com.fiap.annotation;
-
-public @interface Coluna {
-
-	String nome();
-	boolean chave() default false;
-	int tamanho() default 0;
-	boolean obrigatorio() default false;
-}

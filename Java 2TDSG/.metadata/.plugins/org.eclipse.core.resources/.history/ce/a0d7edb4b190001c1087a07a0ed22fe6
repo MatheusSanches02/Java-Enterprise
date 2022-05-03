@@ -1,5 +1,0 @@
-package br.com.fiap.revisao.model;
-
-public enum Combustivel {
-
-}
